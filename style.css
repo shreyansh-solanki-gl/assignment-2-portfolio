@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+  scroll-behavior: smooth;
+}
+/* .container {
+  width: 100%;
+  height: 100%;
+} */
+
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: linear-gradient(161deg, #ffffff 0%, #cfcfcf 51%, #535353 75%);
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  font-weight: 700;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  justify-content: space-around;
+  font-size: 1.3em;
+}
+
+.nav a:hover {
+  color: #ff7300;
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+  font-size: 4em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#home a {
+  font-size: 1.3rem;
+  border: none;
+  background: #8b8b8b;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  width: 170px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#home a:hover {
+  background: #ff7300;
+  color: #d3d3d3;
+  font-weight: 900;
+  transform: scale(1.1);
+}
+
+/* #home img {
+  width: 100%;
+  height: 60vh; */
+/* opacity: 0.3; */
+/* position: absolute;
+  z-index: -1;
+} */
+
+#about {
+  margin-top: 350px;
+  margin-bottom: 50px;
+  font-size: 2.1em;
+  font-weight: 800;
+}
+
+.aboutData {
+  margin: 40px 20% 200px 20%;
+  font-size: medium;
+  font-weight: 400;
+}
+
+#skill {
+  /* font-size: ; */
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+#skill .arrows {
+  display: flex;
+  flex-direction: row;
+  transform: scale(1, -1);
+  font-size: 30px;
+  /* margin-top: ; */
+}
+
+#skill h2 {
+  font-size: 2.8em;
+}
+
+#skill ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* #skill ul {
+  margin: 40px;
+} */
+
+#skill ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  margin-bottom: 30px;
+}
+
+.skillImg {
+  height: 200px;
+}
+
+#skill ul li img {
+  width: 200px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#skill ul li {
+  display: flex;
+  /* flex-direction: column; */
+  height: 100%;
+  /* margin-bottom: 100px; */
+}
+
+.skillText {
+  margin-top: 90px;
+  margin-right: 50px;
+  margin-left: 60px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#contact {
+  color: #ffffff;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#contact span {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.formData {
+  width: 50%;
+  height: 450px;
+  background-color: #6b6868;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: #7c7c7c 0px 5px 10px 0px; */
+}
+
+input[type="submit"]{
+  font-size: large;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #535353;
+}
+
+#hobbies {
+  color: #ffffff;
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+
+#hobbies span {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#hobbies ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#hobbies ul li {
+  margin: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.back {
+  cursor: pointer;
+  width: 100%;
+  margin-left: 95%;
+}
+
+.back a {
+  margin-top: 85vh;
+  color: red;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.back a span {
+  font-size: 25px;
+  font-weight: 900;
+  background: #d6d6d6;
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.back a:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 720px) {
+  #home {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 720px) {
+  .back {
+    display: none;
+  }
+}
+
+/* @media (min-width: 300px) {
+  .container {
+    width: 100vw;
+  }
+} */
+
+/* extra data  */
+/* canvas {
+  margin-top: 50px;
+  padding: 0px;
+  position: absolute;
+  /* background-color: #323232; */
+/* cursor: none; */
+/* z-index: -1;
+  height: 80%;
+  width: 100%;
+} */
+/* extra data end  */
